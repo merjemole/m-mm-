@@ -52,6 +52,7 @@ nav ul li a:hover {
 }
 
 .cart {
+  margin-left: auto; /* Skjuter cart-länken till höger */
   font-weight: bold;
   font-size: 1rem;
 }
