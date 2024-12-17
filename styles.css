@@ -44,10 +44,9 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: row; /* Ändra från column till row */
+  flex-direction: row; /* Gör så att länkarna ligger horisontellt */
   gap: 20px; /* Avstånd mellan länkar */
   align-items: center;
-  justify-content: center;
   padding: 0;
 }
 
