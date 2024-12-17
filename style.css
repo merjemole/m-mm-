@@ -9,7 +9,7 @@ html, body {
   font-size: 16px;
   font-family: 'Nunito', sans-serif; /* Modern och clean */
   line-height: 1.7;
-  background-color: #F3F4EF; /* Mjuk neutral bakgrund */
+  background-color: #F9F7EF; /* Mjuk neutral bakgrund */
   color: #161614; /* Djup svart */
 }
 
@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #FCFAE3; /* Elegant beige */
+  background-color: #FBFBF6; /* Elegant ljus bakgrund */
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -56,7 +56,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F3F4EF;
+  background-color: #FBFBF6;
   padding: 100px 20px;
   text-align: center;
 }
@@ -82,7 +82,7 @@ nav ul li a:hover {
 .cta-btn {
   text-decoration: none;
   background-color: #161614;
-  color: #FCFAE3;
+  color: #FBFBF6;
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: bold;
@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 /* How it Works Section */
 .how-it-works {
-  background-color: #FCFAE3;
+  background-color: #F9F7EF;
   padding: 80px 20px;
   text-align: center;
 }
@@ -136,7 +136,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-  background-color: #F3F4EF;
+  background-color: #FBFBF6;
   padding: 20px;
   text-align: center;
   border-top: 1px solid #E0E0E0;
