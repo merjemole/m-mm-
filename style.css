@@ -6,11 +6,11 @@
 }
 
 html, body {
-  font-size: 16px; /* Lite större för mer elegans */
-  font-family: 'Cormorant Garamond', serif; /* Lyxig och klassisk serif */
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif; /* Modern och clean */
   line-height: 1.7;
-  background-color: #fdfdfd; /* Ljus, nästan vit bakgrund */
-  color: #111111; /* Mjuk svart färg */
+  background-color: #F3F4EF; /* Mjuk neutral bakgrund */
+  color: #161614; /* Djup svart */
 }
 
 /* Header */
@@ -19,15 +19,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #fdfdfd;
-  border-bottom: 1px solid #eaeaea;
+  background-color: #FCFAE3; /* Elegant beige */
+  border-bottom: 1px solid #E0E0E0;
 }
 
 header h1 {
   font-size: 2.5rem;
-  font-weight: 400;
-  font-style: italic; /* Polène använder ofta kursiv serif */
-  color: #111111;
+  font-family: 'Helvetica Neue', sans-serif; /* Lyxigt och tidlöst */
+  font-weight: bold;
+  color: #161614;
   letter-spacing: 1px;
 }
 
@@ -39,16 +39,16 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #111111;
+  color: #161614;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #666666; /* Mjukare svart/grå för hover */
+  color: #8a8a7a; /* En mjukare ton för hover */
 }
 
 /* Hero Section */
@@ -56,7 +56,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9f9f9;
+  background-color: #F3F4EF;
   padding: 100px 20px;
   text-align: center;
 }
@@ -67,26 +67,25 @@ nav ul li a:hover {
 
 .hero h2 {
   font-size: 3.5rem;
-  font-weight: 400;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  color: #111111;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #161614;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  font-family: 'EB Garamond', serif; /* Tillägg för variation i serif */
-  color: #333333;
+  color: #555555;
   margin-bottom: 30px;
 }
 
 .cta-btn {
   text-decoration: none;
-  background-color: #111111;
-  color: #fdfdfd;
+  background-color: #161614;
+  color: #FCFAE3;
   padding: 12px 28px;
   font-size: 1rem;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: none;
@@ -94,21 +93,21 @@ nav ul li a:hover {
 }
 
 .cta-btn:hover {
-  background-color: #333333; /* Ljusare svart */
+  background-color: #8a8a7a;
 }
 
 /* How it Works Section */
 .how-it-works {
-  background-color: #fdfdfd;
+  background-color: #FCFAE3;
   padding: 80px 20px;
   text-align: center;
 }
 
 .how-it-works h2 {
   font-size: 2.8rem;
-  font-weight: 400;
-  font-style: italic;
-  color: #111111;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: #161614;
   margin-bottom: 40px;
 }
 
@@ -124,9 +123,9 @@ nav ul li a:hover {
 
 .step h3 {
   font-size: 1.5rem;
-  font-weight: 400;
-  font-style: italic;
-  color: #111111;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #161614;
   margin-bottom: 15px;
 }
 
@@ -137,21 +136,21 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-  background-color: #fdfdfd;
+  background-color: #F3F4EF;
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #E0E0E0;
 }
 
 footer a {
-  color: #111111;
+  color: #161614;
   text-decoration: none;
   font-size: 0.9rem;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #666666;
+  color: #8a8a7a;
 }
