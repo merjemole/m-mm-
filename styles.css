@@ -44,8 +44,11 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column; /* Placera länkar vertikalt under loggan */
-  gap: 10px;
+  flex-direction: row; /* Ändra från column till row */
+  gap: 20px; /* Avstånd mellan länkar */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 nav ul li a {
@@ -59,7 +62,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #8a8a7a; /* En mjukare ton för hover */
+  color: #8a8a7a; /* Mjukare ton för hover */
 }
 
 .cart {
