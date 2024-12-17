@@ -6,49 +6,49 @@
 }
 
 html, body {
-  font-size: 14px;
-  font-family: 'Playfair Display', serif; /* Lyxig, elegant font */
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  font-size: 16px; /* Lite större för mer elegans */
+  font-family: 'Cormorant Garamond', serif; /* Lyxig och klassisk serif */
+  line-height: 1.7;
+  background-color: #fdfdfd; /* Ljus, nästan vit bakgrund */
+  color: #111111; /* Mjuk svart färg */
 }
 
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #ddd;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #eaeaea;
 }
 
 header h1 {
-  font-size: 2rem; /* Större och elegantare rubrik */
-  font-weight: 500;
-  color: #333;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: italic; /* Polène använder ofta kursiv serif */
+  color: #111111;
   letter-spacing: 1px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-}
-
-nav ul li {
-  font-weight: 500;
+  gap: 30px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #111111;
+  font-size: 1rem;
+  font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Helvetica Neue', sans-serif; /* Modern sans-serif för kontrast */
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #1a73e8;
+  color: #666666; /* Mjukare svart/grå för hover */
 }
 
 /* Hero Section */
@@ -56,8 +56,8 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f4f4f4;
-  padding: 80px 20px;
+  background-color: #f9f9f9;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -66,54 +66,56 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-  font-size: 2.8rem; /* Lyxigare storlek */
-  font-weight: 600;
-  color: #333;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: #111111;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #666;
+  font-family: 'EB Garamond', serif; /* Tillägg för variation i serif */
+  color: #333333;
   margin-bottom: 30px;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .cta-btn {
   text-decoration: none;
-  background-color: #1a73e8;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #111111;
+  color: #fdfdfd;
+  padding: 12px 28px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
   transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #0c5a99;
+  background-color: #333333; /* Ljusare svart */
 }
 
 /* How it Works Section */
 .how-it-works {
-  background-color: #fff;
-  padding: 60px 20px;
+  background-color: #fdfdfd;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .how-it-works h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #111111;
   margin-bottom: 40px;
-  font-family: 'Playfair Display', serif;
 }
 
 .steps {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
 }
 
 .step {
@@ -121,34 +123,35 @@ nav ul li a:hover {
 }
 
 .step h3 {
-  font-size: 1.7rem;
-  font-weight: 500;
-  color: #1a73e8;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #111111;
   margin-bottom: 15px;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .step p {
   font-size: 1rem;
-  color: #666;
+  color: #555555;
 }
 
 /* Footer */
 footer {
-  background-color: #f0f0f0;
+  background-color: #fdfdfd;
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eaeaea;
 }
 
 footer a {
-  color: #1a73e8;
+  color: #111111;
   text-decoration: none;
-  margin-left: 15px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
 footer a:hover {
-  color: #0c5a99;
+  color: #666666;
 }
