@@ -26,7 +26,12 @@ header {
   align-items: center;
 }
 
-header h1 {
+.left-links {
+  display: flex;
+  align-items: center;
+}
+
+.left-links h1 {
   font-size: 2.5rem;
   font-family: 'Helvetica Neue', sans-serif; /* Lyxigt och tidlöst */
   font-weight: bold;
