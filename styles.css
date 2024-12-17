@@ -112,6 +112,20 @@ nav ul li a:hover {
   color: #555555;
 }
 
+/* Create Page */
+.create-container {
+  max-width: 1200px; /* Begränsar bredden till 1200px */
+  margin: 0 auto; /* Centrerar containern horisontellt */
+  padding: 20px; /* Lägger till lite inre marginal */
+}
+
+.create-container h2, 
+.create-container p {
+  margin-bottom: 20px; /* Ger utrymme mellan rubrik och text */
+  text-align: left; /* Behåller texten vänsterjusterad */
+}
+
+
 /* Hero Section */
 .hero {
   display: flex;
