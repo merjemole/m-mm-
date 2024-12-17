@@ -51,6 +51,21 @@ nav ul li a:hover {
   color: #8a8a7a; /* En mjukare ton för hover */
 }
 
+.cart {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cart a {
+  text-decoration: none;
+  color: #161614;
+  transition: color 0.3s ease;
+}
+
+.cart a:hover {
+  color: #8a8a7a;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
