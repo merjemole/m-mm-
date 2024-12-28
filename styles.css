@@ -185,6 +185,7 @@ nav ul li a:hover {
 .carousel-track-container {
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .carousel-track {
@@ -193,12 +194,16 @@ nav ul li a:hover {
 }
 
 .carousel-slide {
-  min-width: 100%;
+  min-width: 240px; /* Adjusting slide size */
+  height: 260px;
   transition: transform 0.5s ease-in-out;
+  flex-shrink: 0; /* Prevent resizing */
 }
 
 .carousel-slide img {
-  width: 100%;
+  width: 240px; /* Force image width */
+  height: 260px; /* Force image height */
+  object-fit: cover; /* Makes the image fit within the box */
   display: block;
   border-radius: 10px;
 }
