@@ -1,36 +1,19 @@
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel-btn.next');
-const prevButton = document.querySelector('.carousel-btn.prev');
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+let slideIndex = 0;
 
-// Arrange slides side by side
-slides.forEach((slide, index) => {
-  slide.style.left = slideWidth * index + 'px';
-});
-
-// Move to a specific slide
-const moveToSlide = (track, currentSlide, targetSlide) => {
-  track.style.transform = `translateX(-${targetSlide.style.left})`;
-  currentSlide.classList.remove('current-slide');
-  targetSlide.classList.add('current-slide');
-};
-
-// Click Next
-nextButton.addEventListener('click', () => {
-  const currentSlide = track.querySelector('.current-slide');
-  const nextSlide = currentSlide.nextElementSibling;
-  if (nextSlide) {
-    moveToSlide(track, currentSlide, nextSlide);
+// Function to move the carousel
+function moveCarousel() {
+  slideIndex++;
+  if (slideIndex >= slides.length) {
+    slideIndex = 0; // Loop back to the start
   }
-});
 
-// Click Prev
-prevButton.addEventListener('click', () => {
-  const currentSlide = track.querySelector('.current-slide');
-  const prevSlide = currentSlide.previousElementSibling;
-  if (prevSlide) {
-    moveToSlide(track, currentSlide, prevSlide);
-  }
-});
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+}
+
+// Start auto-scrolling every 3 seconds
+setInterval(moveCarousel, 3000);
+
