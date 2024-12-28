@@ -171,6 +171,25 @@ nav ul li a:hover {
   background-color: #8a8a7a;
 }
 
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+  background-color: #F9F7EF;
+  color: #161614;
+}
+
+/* Hero Section */
+.hero h2.no-wrap {
+  white-space: nowrap; /* Förhindra radbrytning */
+}
+
 /* Carousel Section */
 .carousel {
   position: relative;
@@ -178,14 +197,13 @@ nav ul li a:hover {
   max-width: 1200px;
   margin: 50px auto;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-track-container {
-  overflow: hidden;
   position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .carousel-track {
@@ -194,44 +212,39 @@ nav ul li a:hover {
 }
 
 .carousel-slide {
-  min-width: 240px; /* Adjusting slide size */
+  min-width: 240px;
   height: 260px;
-  transition: transform 0.5s ease-in-out;
-  flex-shrink: 0; /* Prevent resizing */
+  flex-shrink: 0;
+  margin: 0 5px;
 }
 
 .carousel-slide img {
-  width: 240px; /* Force image width */
-  height: 260px; /* Force image height */
-  object-fit: cover; /* Makes the image fit within the box */
+  width: 240px;
+  height: 260px;
+  object-fit: cover;
   display: block;
   border-radius: 10px;
 }
 
-/* Carousel Buttons */
-.carousel-btn {
+/* Blur effect */
+.carousel-track-container::before,
+.carousel-track-container::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(22, 22, 20, 0.8);
-  color: #FBFBF6;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  width: 50px;
   z-index: 2;
-  border-radius: 50%;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(249, 247, 239, 1), rgba(249, 247, 239, 0));
 }
 
-.carousel-btn.prev {
-  left: 10px;
+.carousel-track-container::before {
+  left: 0;
 }
 
-.carousel-btn.next {
-  right: 10px;
-}
-
-.carousel-btn:hover {
-  background-color: rgba(22, 22, 20, 1);
+.carousel-track-container::after {
+  right: 0;
 }
 
 
